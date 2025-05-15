@@ -6,9 +6,9 @@ import matplotlib
 
 matplotlib.use('TkAgg')
 
-alpha = 0.2
-gamma = 1
-D = 1.0
+alpha = 1
+gamma = 0.1
+D = 1
 m0 = 1.0
 n0 = 1.0
 
@@ -65,7 +65,7 @@ def animate(i):
 
 
 ani = animation.FuncAnimation(fig, animate, frames=len(frames), interval=100)
-# gif_path = "results/animation.gif"
+# gif_path = "results/animation_high_gam.gif"
 # ani.save(gif_path, writer='pillow', fps=10)
 # plt.close(fig)
 plt.show()
